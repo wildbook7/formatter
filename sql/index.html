@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>SQL整形ツール</title>
+  <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+  <script type="text/javascript" src="js/SQL_Formatter.js"></script>
+  <style type="text/css">
+    textarea{
+      width:  60%;
+      height: 30%;
+    }
+  </style>
+</head>
+<body>
+  <strong>SQL整形ツール</strong><br>
+  <br>
+    ◆整形前<br>
+    <textarea id="before" rows="10"></textarea><br>
+    <br>
+    <input type="button" value="↓ 整形する ↓" onclick="SQL_Formatter();"></input><br>
+    <br>
+    ◆整形後<br>
+    <textarea id="after" rows="10"></textarea><br>
+    <br>
+    <br>
+    （整形仕様）
+    <ul style="list-style-type: circle">
+    <li>整形対象はSQL１文で、開き括弧と閉じ括弧の数が等しいものに限ります。</li>
+    <li>開き括弧と閉じ括弧で囲まれた箇所は、１行で整形します。</li>
+    <li>JavaScriptで整形しており、ご自身のPCで整形プログラムが動きます。</li>
+    <li>整形前のSQL文がサーバーに送られることはありません。</li>
+</body>
+</html>
